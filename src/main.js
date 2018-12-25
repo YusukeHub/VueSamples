@@ -3,8 +3,10 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import {ServerTable, ClientTable, Event} from 'vue-tables-2';
 
 Vue.config.productionTip = false
+Vue.use(ClientTable)
 
 /* eslint-disable no-new */
 new Vue({
