@@ -34,10 +34,11 @@
             },
             // 保存前の準備をする(添付ファイルのアップロードなど)
             prepareSave: function (resolve, reject) {
+                console.log('-->  ChildPartsOne.prepareSave()');
                 let self = this;
                 setTimeout(function () {
                     let rand = Math.floor(Math.random() * 100);
-                    console.log("-->  ChildPartsOne.prepareSave(" + self.calcVal + ' -> ' + rand);
+                    console.log('-->  ChildPartsOne.prepareSave.setTimeout(' + self.calcVal + ' -> ' + rand);
                     self.calcVal = rand;
                     resolve(rand);
                 }, 2000);
