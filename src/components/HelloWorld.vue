@@ -2,6 +2,7 @@
     <div class="hello">
         <ChildList ref="childList"></ChildList>
         <button v-on:click.prevent="onProcess">process</button>
+        <router-link to="/VueTable2Sample">toVueTable2Sample</router-link>
     </div>
 </template>
 
